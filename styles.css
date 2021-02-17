@@ -1,8 +1,9 @@
 /* Global ================ */
 :root {
-    --bigPurple: #4430a8;
-    --darkPurple: #402d9f;
-    --purple: #302277;
+    --dark-blue: #363f5f;
+    --green: #49AA26;
+    --light-green: #3dd705;
+    --red: #e92929;
 }
 
 * {
@@ -12,7 +13,7 @@
 }
 
 body {
-    background: #7360d2;
+    background: #f0f2f5;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -41,7 +42,7 @@ html {
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
-    color: var(--bigPurple);
+    color: var(--dark-blue);
     font-weight: normal;
 
 }
@@ -49,13 +50,13 @@ h2 {
 /* Links e buttons ===============*/
 
 a {
-    color: white;
+    color: var(--green);
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover{
-    color: var(--darkPurple);
+    color: var(--light-green);
 }
 
 button {
@@ -63,14 +64,14 @@ button {
     height: 50px;
     border-radius: 0.25rem;
     color: white;
-    background: var(--darkPurple);
+    background: var(--green);
     padding: 0;
     cursor: pointer;
     border: none;
 }
 
 button:hover {
-    background: var(--purple);
+    background: var(--light-green);
 }
 
 .button.new {
@@ -79,8 +80,8 @@ button:hover {
 }
 
 .button.cancel {
-    color: #7360d2;
-    border: 2px solid #7360d2;
+    color: var(--red);
+    border: 2px solid var(--red);
     border-radius: 0.25rem;
     display: flex;
     align-items: center;
@@ -95,7 +96,7 @@ button:hover {
 
 /* Header =================*/
 header {
-    background: #201551;
+    background: #2D4A22;
     padding: 2rem 0 10rem;
     text-align: center;
 }
@@ -117,14 +118,14 @@ header {
 
 /*Cards ================*/
 .card {
-    background: var(--bigPurple);
+    background: white;
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     margin-bottom: 2rem;
+    color: var(--dark-blue);
 }
 
 .card h3 {
-    color: white;
     font-weight: normal;
     font-size: 1rem;
     display: flex;
@@ -133,14 +134,13 @@ header {
 }
 
 .card p {
-    color: white;
     font-size: 2rem;
     line-height: 3rem;
     margin-top: 1rem;
 }
 
 .card.total {
-    background: var(--darkPurple);
+    background: var(--green);
     color: white;
 } 
 
@@ -168,8 +168,7 @@ table tbody tr td:last-child {
 }
 
 table thead tr th {
-    background: var(--darkPurple);
-    color: white;
+    background: white;
 }
 
 table th {
@@ -187,24 +186,20 @@ table tbody tr:hover {
 }
 
 table td {
-    background: var(--darkPurple);
+    background: white;
     padding: 1rem 2rem;
 }
 
 td.description {
-    color: white;
+    color: var(--dark-blue);
 }
 
 td.expense {
-    color: #e71111;
+    color: #e92929;
 }
 
 td.income {
     color: #12a454;
-}
-
-td.date {
-    color: white;
 }
 
 /* Modal ===========================*/
@@ -227,7 +222,7 @@ td.date {
 }
 
 .modal {
-    background: #201551;
+    background: #F0F2f5;
     padding: 2.4rem;
     position: relative;
     max-width: 500px;
@@ -241,7 +236,6 @@ td.date {
 
 #form h2 {
     margin-top: 0;
-    color: white;
 }
 
 input {
@@ -256,7 +250,7 @@ input {
 }
 
 .input-group small {
-    color: white;
+    opacity: 0.4;
 }
 
 .input-group.actions {
@@ -277,7 +271,7 @@ input {
 footer {
     text-align: center;
     padding: 6rem 0 2rem;
-    color: var(--bigPurple);
+    color: var(--dark-blue);
 }
 
 /* Responsive ===========*/
