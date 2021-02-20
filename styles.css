@@ -1,10 +1,46 @@
 /* Global ================ */
 :root {
-    --dark-blue: #363f5f;
-    --green: #49AA26;
-    --light-green: #39c705;
+    --t-button: #2c6a15;
+    --gelo: #f0f2f5;
+    --header-footer: #2D4A22;
+    --text: #363f5f;
+    --total-card: #3f9121;
+    --t-button-hover: #39c705;
+    --save-button: #367d1c;
+    --save-button-text: #fff;
+    --cards: #fff;
+    --total-card-text: #fff;
+    --list: #fff;
     --red: #d01616;
+    --data: #18103c;
+    --save-button-hover: #39c705;
+    --inp-b: #fff;
+    --inp-c: #000;
+    --samll: default;
+    --income: #0d733b;
 }
+
+.dark-mode:root {
+    --t-button: #AAA;
+    --gelo: #0f0f0f;
+    --header-footer: #000;
+    --text: #AAA;
+    --total-card: #262626;
+    --t-button-hover: #bfbfbf;
+    --total-card-text: #d9d9d9;
+    --list: #212121fa;
+    --data: #AAA;
+    --cards: #181818;
+    --red: #ec4646;
+    --save-button: #262626;
+    --save-button-text: #AAA;
+    --save-button-hover: #333333;
+    --inp-b: #000;
+    --inp-c: #fff;
+    --small: #AAA;
+    --income: #35E986;
+}
+
 
 * {
     margin: 0;
@@ -13,7 +49,7 @@
 }
 
 body {
-    background: #f0f2f5;
+    background: var(--gelo);
     font-family: 'Poppins', sans-serif;
     position: relative;
     padding-bottom: 64px;
@@ -46,7 +82,7 @@ html {
 h2 {
     margin-top: 3.2rem;
     margin-bottom: 0.8rem;
-    color: var(--dark-blue);
+    color: var(--text);
     font-weight: normal;
 
 }
@@ -54,28 +90,28 @@ h2 {
 /* Links e buttons ===============*/
 
 a {
-    color: #2c6a15;
+    color: var(--t-button);
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover{
-    color: var(--light-green);
+    color: var(--t-button-hover);
 }
 
 button {
     width: 100%;
     height: 50px;
     border-radius: 0.25rem;
-    color: white;
-    background: #367d1c;
+    color: var(--save-button-text);
+    background: var(--save-button);
     padding: 0;
     cursor: pointer;
     border: none;
 }
 
 button:hover {
-    background: var(--light-green);
+    background: var(--save-button-hover);
 }
 
 .button.new {
@@ -100,14 +136,13 @@ button:hover {
 
 /* Header =================*/
 header {
-    background: #2D4A22;
+    background: var(--header-footer);
     padding: 2rem 0 10rem;
     text-align: center;
 }
 
-#logo {
-    color: #fff;
-    font-weight: 100;
+header input {
+    margin-left: 50rem;
 }
 
 /* Balance ===============*/
@@ -122,11 +157,11 @@ header {
 
 /*Cards ================*/
 .card {
-    background: white;
+    background: var(--cards);
     padding: 1.5rem 2rem;
     border-radius: 0.2rem;
     margin-bottom: 2rem;
-    color: var(--dark-blue);
+    color: var(--text);
 }
 
 .card h3 {
@@ -144,8 +179,8 @@ header {
 }
 
 .card.total {
-    background: var(--green);
-    color: white;
+    background: var(--total-card);
+    color: var(--total-card-text);
 } 
 
 /* Table ================*/
@@ -158,7 +193,7 @@ header {
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #18103c;
+    color: var(--data);
 }
 
 table thead tr th:first-child,
@@ -172,7 +207,7 @@ table tbody tr td:last-child {
 }
 
 table thead tr th {
-    background: white;
+    background: var(--list);
 }
 
 table th {
@@ -190,12 +225,12 @@ table tbody tr:hover {
 }
 
 table td {
-    background: white;
+    background: var(--list);
     padding: 1rem 2rem;
 }
 
 td.description {
-    color: var(--dark-blue);
+    color: var(--text);
 }
 
 td.expense {
@@ -203,7 +238,7 @@ td.expense {
 }
 
 td.income {
-    color: #0d733b;
+    color: var(--income);
 }
 
 /* Modal ===========================*/
@@ -226,7 +261,7 @@ td.income {
 }
 
 .modal {
-    background: #F0F2f5;
+    background: var(--gelo);
     padding: 2.4rem;
     position: relative;
     max-width: 500px;
@@ -247,6 +282,18 @@ input {
     border-radius: 0.2rem;
     padding: 0.8rem;
     width: 100%;
+    background: var(--inp-b);
+    color: var(--inp-c);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+
 }
 
 .input-group {
@@ -255,6 +302,7 @@ input {
 
 .input-group small {
     opacity: 0.4;
+    color: var(--small);
 }
 
 .input-group.actions {
@@ -276,7 +324,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
     color: white;
-    background: #2D4A22;
+    background: var(--header-footer);
     position: absolute;
     bottom: 0;
     width: 100%;
