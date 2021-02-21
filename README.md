@@ -1,1 +1,1 @@
-# Projeto desenvolvido durante a maratona discover. 😚
+# Aplicação financeira desenvolvida durante a Maratona Discover. 😚
