@@ -1,3 +1,11 @@
+const $html = document.querySelector('html')
+
+const $checkbox = document.querySelector('#switch-shadow')
+
+$checkbox.addEventListener('change', () => {
+    $html.classList.toggle('dark-mode')
+})
+
 const Modal = {
     open() {
         // abrir o modal
@@ -205,13 +213,7 @@ const App = {
 
 // dark mode
 
-const $html = document.querySelector('html')
 
-const $checkbox = document.querySelector('#switch-shadow')
-
-$checkbox.addEventListener('change', () => {
-    $html.classList.toggle('dark-mode')
-})
 
 App.init()
 
