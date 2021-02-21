@@ -1,1 +1,1 @@
-# Projeto desenvolvido durante a maratona discover.
+# Projeto desenvolvido durante a maratona discover. 😚
