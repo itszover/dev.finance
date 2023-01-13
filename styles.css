@@ -29,9 +29,6 @@
 body {
   background: var(--gelo);
   font-family: "Poppins", sans-serif;
-  position: relative;
-  padding-bottom: 64px;
-  min-height: 100vh;
 }
 
 .sr-only {
@@ -46,9 +43,9 @@ body {
   border-width: 0;
 }
 
-.conteiner {
-  margin: auto;
+.container {
   width: min(90vw, 800px);
+  margin: auto;
 }
 
 html {
@@ -156,7 +153,7 @@ header {
 }
 
 /* Table ================*/
-#transaction {
+#transactions {
   display: block;
   overflow-x: auto;
   width: 100%;
@@ -196,7 +193,7 @@ table tbody tr:hover {
   opacity: 1;
 }
 
-table td {
+table tbody td {
   background: var(--list);
   padding: 1rem 2rem;
 }
