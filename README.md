@@ -1,2 +1,4 @@
-# Projeto desenvolvido durante o Discover
-## Clique [aqui](https://itszover.github.io/discover/)
+# Projeto desenvolvido durante o Discover (Rocketseat)
+
+## 📄 GitHub Pages 
+* [github.io/dev.finance](https://itszover.github.io/dev.finance/)
